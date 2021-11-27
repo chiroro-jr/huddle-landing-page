@@ -1,0 +1,7 @@
+.about {
+    padding: 8em 0 14em;
+
+    @include respond(mobile) {
+        padding: 4em 0 10em;
+    }
+}

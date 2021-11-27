@@ -1,0 +1,86 @@
+.header {
+    background-color: var(--very-pale-cyan);
+    background-image: url('../../assets/images/bg-hero-desktop.svg');
+    padding-bottom: 3em;
+
+    @include respond(mobile) {
+        background-image: url('../../assets/images/bg-hero-mobile.svg');
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 3em 2em;
+
+        @include respond(mobile) {
+            display: grid;
+            gap: 3em 0;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.main-text {
+    align-self: center;
+
+    @include respond(mobile) {
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & > * + * {
+        margin-top: 1.4rem;
+    }
+
+    // h1,
+    // p {
+    //     color: var(--very-dark-cyan);
+
+    //     @include respond(mobile) {
+    //         text-align: center;
+    //     }
+    // }
+
+    // h1 {
+    //     font-family: var(--font-poppins);
+    //     font-size: 1.8rem;
+    //     font-weight: 700;
+    //     line-height: 1.4em;
+
+    //     @include respond(mobile) {
+    //         font-size: 1.5rem;
+    //     }
+    // }
+
+    p {
+        color: var(--very-dark-cyan);
+        font-size: 0.8rem;
+
+        @include respond(mobile) {
+            text-align: center;
+        }
+    }
+}
+
+.main-image {
+    width: 30rem;
+
+    @include respond(mobile) {
+        grid-row: 3;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.main-image,
+.main-text {
+    @include respond(mobile) {
+        padding: 0 0.5rem;
+    }
+}

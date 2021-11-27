@@ -1,0 +1,84 @@
+.card {
+    padding: 1em;
+    border-radius: 0.7em;
+    display: flex;
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 7%);
+
+    &:not(:first-child) {
+        margin-top: 2.5rem;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+
+        @include respond(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    @include respond(mobile) {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    &--floating {
+        background-color: var(--white);
+        padding: 3em;
+        width: 95%;
+        max-width: 35rem;
+        position: absolute;
+        top: -8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        justify-content: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        :first-child {
+            margin-bottom: 0.5em;
+        }
+
+        @include respond(mobile) {
+            padding: 2em 0.5em;
+            top: -6rem;
+        }
+    }
+
+    &__image {
+        width: 85%;
+        padding: 0.5em;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        margin-left: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(mobile) {
+            margin-left: 0;
+            margin-top: 2.3em;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: var(--grayish-blue);
+            margin-top: 1em;
+            width: 85%;
+
+            @include respond(mobile) {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.nav--bottom {
+    @include respond(mobile) {
+        grid-row: 3;
+    }
+
+    .links {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em 2em;
+
+        @include respond(mobile) {
+            grid-template-columns: 1fr;
+            gap: 1em 0;
+        }
+    }
+
+    .link {
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--white);
+            font-size: 0.9rem;
+        }
+    }
+}
