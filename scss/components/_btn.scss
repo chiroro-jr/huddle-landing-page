@@ -6,6 +6,11 @@
     text-decoration: none;
     font-weight: 600;
     padding: 0.8em 3.5em;
+    transition: all 0.4s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
 
     @include respond(mobile) {
         font-size: 0.8rem;
@@ -27,10 +32,19 @@
     &--white {
         color: var(--very-dark-cyan);
         background-color: var(--white);
+
+        &:hover {
+            color: var(--grayish-blue);
+        }
     }
 
     &--pink {
         color: var(--white);
         background-color: var(--pink);
+
+        &:hover {
+            background-color: lighten(hsl(322, 100%, 66%), 10%);
+            box-shadow: 0px 5px 11px 0px rgb(0 0 0 / 15%);
+        }
     }
 }

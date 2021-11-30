@@ -55,10 +55,20 @@
 
     @include respond(mobile) {
         grid-row: 5;
+        justify-self: center;
     }
 
     &__icon {
         margin-right: 1em;
+        transition: all 0.4s;
+        border: 2px solid var(--white);
+        padding: 0.5em;
+        border-radius: 50%;
+
+        &:hover {
+            color: var(--pink);
+            border-color: var(--pink);
+        }
     }
 }
 
