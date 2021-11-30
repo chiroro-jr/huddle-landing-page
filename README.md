@@ -40,7 +40,7 @@ Users should be able to:
 ### Built with
 
 -   Semantic HTML5 markup
--   CSS and SCSS(using dart-sass) using a little bit of custom properties
+-   CSS and SCSS(dart-sass) using a little bit of custom properties
 -   Block Element Modifier(BEM) and the 7-1 pattern for architecture and folder structure
 -   Flexbox
 -   Grid
@@ -152,4 +152,4 @@ A big part of the modern web, particularly frontend web, is responsive design. T
 
 ## Acknowledgments
 
-If you would like to learn more about CSS architecture, how to arrange files and folders and the BEM methodology (and pretty much everything CSS) in detail you can check out **Jonas Schmedtmann**'s advanced CSS and Sass course [here](https://www.udemy.com/course/advanced-css-and-sass/). Most of what I know about CSS and Sass I learned in this course. I am sure it will help you too. I know I have already mentioned this course. That's how good I think it is.
+If you would like to learn more about CSS architecture, how to arrange files and folders and the BEM methodology (and pretty much everything CSS) in detail you can check out **Jonas Schmedtmann**'s advanced CSS and Sass course [here](https://www.udemy.com/course/advanced-css-and-sass/). Most of what I know about CSS and SASS I learned in this course. I am sure it will help you too. I know I have already mentioned this course. That's how good I think it is.
