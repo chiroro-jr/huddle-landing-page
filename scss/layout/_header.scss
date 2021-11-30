@@ -1,10 +1,15 @@
 .header {
-    background-color: var(--very-pale-cyan);
     background-image: url('../../assets/images/bg-hero-desktop.svg');
+    background-color: var(--very-pale-cyan);
+    background-position: bottom;
+    background-size: 75%;
+    background-repeat: no-repeat;
     padding-bottom: 3em;
 
     @include respond(mobile) {
         background-image: url('../../assets/images/bg-hero-mobile.svg');
+        background-size: initial;
+        background-size: 110%;
     }
 
     &-grid {
